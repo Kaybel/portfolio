@@ -1,0 +1,17 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio proyectos",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "portafolio",
+    "kaybel",
+    "laboratoria",
+    "final"
+  ],
+  "author": "alejandra kaybel martinez gonzalez",
+  "license": "ISC"
+}
