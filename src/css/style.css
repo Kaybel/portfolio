@@ -17,7 +17,7 @@ nav {
   height: 60px; 
   position: fixed; 
   top: 0;
-  /*background-color: ;*/
+  background-color: #343434 ;
 }
 
 /* nav centrado y con espacio de la barra de la página*/
@@ -35,41 +35,51 @@ nav ul li {
 /* nav color */
 nav ul li a {
   padding: 10px 0;
-  /*color*/
+  color: #e6b31e;
   font-size: 1rem;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: #fcfaf1;
 }
 /* color de a luego de activar los links*/
 a.active {
   border-bottom: 2px solid #ecf0f1;
 }
 
-/* Titulos de la página */
+/* Textos de la página */
 h1 {
   font-size: 5rem;
-  /*color*/
+  color: #343434;
 }
-
+#hwork{
+margin-top: 0;
+}
+/* imagenes */
+#logo{
+  width: 20%;
+  height: 50%;
+  margin-top: 10%;
+}
+p{
+ text-align: left;
+}
 /* Secciones */
 section {
   width: 100%;
   padding: 50px;
-  background: #fff;
   border-bottom: 1px solid #ccc;
   height: 500px;
   text-align: center;
 }
-
-/*
 section:nth-child(even) {
-  background: #ecf0f1;
+  background: #cacaca ;
 }
 section:nth-child(odd) {
-  background: #bdc3c7;
+  background: #e6b31e;
 }
 .sections section:first-child {
   margin-top: 60px;
 }
-*/
