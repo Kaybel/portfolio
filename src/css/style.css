@@ -54,6 +54,9 @@ h1 {
   font-size: 5rem;
   color: #343434;
 }
+#about{
+  text-align: left;
+}
 #hwork{
 margin-top: 0;
 }
@@ -64,7 +67,14 @@ margin-top: 0;
   margin-top: 10%;
 }
 #about{
- text-align: left;
+  position: absolute;
+}
+#Habilidades{
+  margin-left: 60%;
+  margin-bottom: 15%;
+  display: inline-block;
+  width: 30%;
+  height: 75%;
 }
 /* Secciones */
 section {
@@ -86,16 +96,18 @@ section:nth-child(odd) {
 
 /* Animacion de Habilidades*/
 p{
-  font-weight: bold;
-  font-size: 30px;
   display: inline;
-  color: #343434;
 }
-
 div{
+  color: #343434;
+  font-weight: bold;
   position: absolute;
+  font-size: 30px;
   overflow: hidden;
   animation: words 4s infinite ease-in-out;
+}
+div:hover{
+  color: #cacaca;
 }
 
 @keyframes words{
