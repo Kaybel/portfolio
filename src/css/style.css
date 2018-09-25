@@ -63,7 +63,7 @@ margin-top: 0;
   height: 50%;
   margin-top: 10%;
 }
-p{
+#about{
  text-align: left;
 }
 /* Secciones */
@@ -82,4 +82,27 @@ section:nth-child(odd) {
 }
 .sections section:first-child {
   margin-top: 60px;
+}
+
+/* Animacion de Habilidades*/
+p{
+  font-weight: bold;
+  font-size: 30px;
+  display: inline;
+  color: #343434;
+}
+
+div{
+  position: absolute;
+  overflow: hidden;
+  animation: words 4s infinite ease-in-out;
+}
+
+@keyframes words{
+  from {
+      width:40%
+  }
+  to{
+      width:50%;
+  }
 }
