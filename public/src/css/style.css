@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Nav */
+
+nav {
+  width: 100%;
+  height: 60px; 
+  position: fixed; 
+  top: 0;
+  background-color: #343434 ;
+  z-index: 2;
+}
+
+/* nav centrado y con espacio de la barra de la página*/
+nav ul {
+  padding: 20px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+/* nav block */
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+/* nav color */
+nav ul li a {
+  padding: 10px 0;
+  color: #e6b31e;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: #fcfaf1;
+}
+/* color de a luego de activar los links*/
+a.active {
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Textos de la página */
+h1 {
+  font-size: 5rem;
+  color: #343434;
+}
+#hwork{
+margin-top: 0;
+}
+/* imagenes */
+#logo{
+  width: 20%;
+  height: 50%;
+  margin-top: 10%;
+}
+p{
+ text-align: left;
+}
+/* Secciones */
+section {
+  width: 100%;
+  padding: 50px;
+  border-bottom: 1px solid #ccc;
+  height: 500px;
+  text-align: center;
+}
+section:nth-child(even) {
+  background: #cacaca ;
+}
+section:nth-child(odd) {
+  background: #e6b31e;
+}
+.sections section:first-child {
+  margin-top: 60px;
+}
+
+/* Habilidades */
+
+.fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+  margin-right: 7%;
+}
+
+.fakeMenu {
+  width: 500px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: right;
+  margin-top: 3%;
+}
+
+.fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+p {
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1 {
+  color: #9CD9F0;
+  -webkit-animation: type .5s 1s steps(20, end) forwards;
+  -moz-animation: type .5s 1s steps(20, end) forwards;
+  -o-animation: type .5s 1s steps(20, end) forwards;
+  animation: type .5s 1s steps(20, end) forwards;
+}
+
+.line2 {
+  color: #CDEE69;
+  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  -moz-animation: type .5s 4.25s steps(20, end) forwards;
+  -o-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards;
+}
+
+
+.line3 {
+  color: #E09690;
+  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+  -moz-animation: type .5s 7.5s steps(20, end) forwards;
+  -o-animation: type .5s 7.5s steps(20, end) forwards;
+  animation: type .5s 7.5s steps(20, end) forwards;
+}
+
+.line4 {
+  color: rgb(28, 255, 28);
+  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+  -moz-animation: type .5s 10.75s steps(20, end) forwards;
+  -o-animation: type .5s 10.75s steps(20, end) forwards;
+  animation: type .5s 10.75s steps(20, end) forwards;
+}
+
+.line5 {
+  color: rgb(251, 157, 242);
+  -webkit-animation: type .5s 14s steps(20, end) forwards;
+  -moz-animation: type .5s 14s steps(20, end) forwards;
+  -o-animation: type .5s 14s steps(20, end) forwards;
+  animation: type .5s 14s steps(20, end) forwards;
+}
+
+.line6 {
+  color: rgb(71, 232, 223);
+  -webkit-animation: type .5s 17.25s steps(20, end) forwards;
+  -moz-animation: type .5s 17.25s steps(20, end) forwards;
+  -o-animation: type .5s 17.25s steps(20, end) forwards;
+  animation: type .5s 17.25s steps(20, end) forwards;
+}
+
+.line7 {
+  color: #fff;
+  -webkit-animation: type .5s 20.75s steps(20, end) forwards;
+  -moz-animation: type .5s 20.75s steps(20, end) forwards;
+  -o-animation: type .5s 20.75s steps(20, end) forwards;
+  animation: type .5s 20.75s steps(20, end) forwards;
+}
+
+.cursor {
+  -webkit-animation: blink 1s 11.5s infinite;
+  -moz-animation: blink 1s 8.5s infinite;
+  -o-animation: blink 1s 8.5s infinite;
+  animation: blink 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-moz-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-o-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 17em;
+  }
+}
