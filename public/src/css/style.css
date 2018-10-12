@@ -20,7 +20,20 @@ nav {
   background-color: #343434 ;
   z-index: 2;
 }
-
+.icon{
+  border: none;
+  background-color: inherit;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+.fab{
+  font-size: 420%;
+  background-color: inherit;
+}
+.fas{
+  font-size: 420%;
+  background-color: inherit;
+}
 /* nav centrado y con espacio de la barra de la página*/
 nav ul {
   padding: 20px;
@@ -59,7 +72,7 @@ h1 {
 margin-top: 0;
 }
 /* imagenes */
-#logo{
+#logoImg{
   width: 20%;
   height: 50%;
   margin-top: 10%;
