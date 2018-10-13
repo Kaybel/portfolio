@@ -9,6 +9,21 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+#kaybel{
+  border-radius: 50%;
+  width: 380px;
+  right: 5%;
+  top: 170%;
+  position: absolute;;
+}
+#meme{
+  font-family: 'Open Sans', sans-serif;
+  color: #343434;
+  width: 50%;
+  margin-top: 4%;
+  margin-bottom: 1rem;
+  text-align: justify
+}
 
 /* Nav */
 
@@ -25,6 +40,13 @@ nav {
   background-color: inherit;
   margin-top: 10%;
   margin-right: 5%;
+  color: #343434;
+}
+.icon:hover{
+  color:#fcfaf1;
+}
+button.icon{
+  font-size: 105%;
 }
 .fab{
   font-size: 420%;
@@ -77,9 +99,7 @@ margin-top: 0;
   height: 50%;
   margin-top: 10%;
 }
-p{
- text-align: left;
-}
+
 /* Secciones */
 section {
   width: 100%;
@@ -134,30 +154,21 @@ section:nth-child(odd) {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   text-align: right;
-  margin-top: 3%;
 }
 
 .fakeScreen {
   background-color: #151515;
   box-sizing: border-box;
   width: 500px;
-  margin: 0 auto;
   padding: 20px;
-  padding-bottom: 40px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-p {
-  position: relative;
-  left: 50%;
-  margin-left: -8.5em;
+  height: 73%;
+  left: 73%;
+  margin-left: 21.1em;
   text-align: left;
   font-size: 1.25em;
   font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
 }
 
 span {

@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -38,16 +39,20 @@
   </section>
 
   <section id="work">
-    <h1 id="hwork"> Trabajos </h1>
-
+    <h1 id="work"> Trabajos </h1>
+    <img src="..." class="rounded float-left" alt="imagen de proyecto ConectApp Angular">
+    <div class="text-center">
+        <img src="..." class="rounded" alt="imagen de FoodMap">
+      </div>
+    <img src="..." class="rounded float-right" alt="imagen de HackatonHere">
   </section>
 
   <section id="about_me">
       <h1> Sobre mí </h1>
-      <div> <p >Mi nombre es
-          <strong> Alejandra Kaybel Martinez Gonzalez, </strong>
-          <br> estudié programacion Front-End en Laboratoria Chile, tengo 21 años y soy de Venezuela
-        </p> </div>
+      <div id="meme">Me llamo <strong>Alejandra Martinez </strong> Soy <strong>Front-End Developer</strong> parte de la 6ta Generación del Bootcamp de Laboratoria en Santiago, Chile me considero capaz, siempre intento dar lo mejor de mi en los proyectos planteados y en las circunstancias que pueda solucionar a través de las tecnologías anteriormente aprendidas dado que para mí las mismas son la solución futura a los problemas del presente.
+      <br> <br>
+      Mis metas son seguir estudiando y aprendiendo sobre informática.</div>
+      <img src="assets/img/WhatsApp Image 2018-10-13 at 18.59.32.jpeg" alt="foto mía" id="kaybel" srcset="">
   </section>
 
   <section id="abilities">
@@ -58,7 +63,7 @@
       <div class="fakeButtons fakeZoom"></div>
     </div>
     <div class="fakeScreen">
-      <p class="line1">&#91;&ldquo;JavaScript, CSS3, HTML5 &rdquo;,</p>
+      <p class="line1">&#91;&ldquo;JavaScript, CSS3, HTML5 &rdquo;,</p> 
       <p class="line2">&nbsp;&ldquo;Angular, TypeScript, npm&rdquo;,</p>
       <p class="line3">&nbsp;&ldquo;JQuery, NodeJs, GitHub &rdquo;&nbsp;,</p>
       <p class="line4">&nbsp;&ldquo;Git, Mocha, Chai, Jest &rdquo;&nbsp;,</p>
@@ -72,13 +77,36 @@
 
   <section id="contact_me">
     <h1> Contáctame </h1>
-<div>
-  <a href="pagina.html" target="https://github.com/Kaybel"class="icon"><i class="fab fa-github-square"></i></a>
-  <a href="pagina.html" target="https://www.linkedin.com/in/alejandra-kaybel-martinez-gonzalez-801b8914a/"class="icon"><i class="fab fa-linkedin"></i></a>
-  <a href="pagina.html" target="_blank"class="icon"><i class="fas fa-envelope"></i></a>
-</div>
+  <a href="https://github.com/Kaybel" target="GitHub"class="icon"><i class="fab fa-github-square"></i></a>
+  <a href="https://www.linkedin.com/in/alejandra-kaybel-martinez-gonzalez-801b8914a/" target="LinkedIn"class="icon"><i class="fab fa-linkedin"></i></a>
+  <!-- Button trigger modal -->
+<button type="button" class="icon" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <i class="fas fa-envelope"></i>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Mail: </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          kblmrtnz@gmail.com
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   </section>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="src/js/index.js"></script>
 </body>
 
