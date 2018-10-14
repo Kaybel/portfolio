@@ -1,124 +1,105 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.nav-link{
+  background-color: inherit;
+  border: none;
 }
-
-body {
-  font-family: 'Open Sans', sans-serif;
+#sideMenu{
+  height: 100vh;
+}
+.fas{
+  font-size: 250%;
+  color: #e6b31e;
+}
+body{
+  background-color: #cacaca;
+}
+#fas{
+  width: 45px;
+  margin-top: 30%;
+}
+.fa-smile-beam:before {
+  content: "\f5b8";
+  margin-left: 5px;
+}
+.fa-briefcase:before {
+  content: "\f0b1";
+  margin-left: 5px;
+}
+.fa-mail-bulk:before {
+  content: "\f674";
+  margin-left: 3px;
+}
+#sideMenu{
+  background-color: #343434;
+}
+.navbar{
+  background-color: #343434;
+  box-shadow: 0px 10px 30px #343434;
+}
+#elephant{
+  width: 50%;
+  margin-top: 40%;
+  margin-left: 20%;
+}
+/* About Me */
+h1{
+  text-align: center;
+  margin-top: 10%;
 }
 #kaybel{
+  width: 50%;
   border-radius: 50%;
-  width: 380px;
-  right: 5%;
-  top: 170%;
-  position: absolute;;
+  margin-bottom: 3%;
+  margin-left: 15%;
 }
 #meme{
-  font-family: 'Open Sans', sans-serif;
-  color: #343434;
-  width: 50%;
-  margin-top: 4%;
-  margin-bottom: 1rem;
-  text-align: justify
+  text-align: justify;
+  margin-left: 22%;
 }
 
-/* Nav */
+/* Contact me*/
 
-nav {
-  width: 100%;
-  height: 60px; 
-  position: fixed; 
-  top: 0;
-  background-color: #343434 ;
-  z-index: 2;
+a span {
+  background-color: #343434;
+  padding:10px;
+  color: #cacaca;
+  opacity:0;
+  font-size: 30%;
+}
+a:hover span {
+  opacity:1;
+    -webkit-transition: opacity .1s ease-in .5s;
+}
+button span {
+  background-color: #343434;
+  padding:10px;
+  color: #cacaca;
+  opacity:0;
+}
+button:hover span {
+  opacity:1;
+    -webkit-transition: opacity .1s ease-in .5s;
+}
+.iconosDiv {
+  margin-left: 30%;
 }
 .icon{
   border: none;
   background-color: inherit;
-  margin-top: 10%;
-  margin-right: 5%;
+  margin-left: 10%;
+}
+.fa-envelope:before {
+  content: "\f0e0";
   color: #343434;
+  font-size: 135%;
 }
-.icon:hover{
-  color:#fcfaf1;
-}
-button.icon{
-  font-size: 105%;
-}
-.fab{
-  font-size: 420%;
-  background-color: inherit;
-}
-.fas{
-  font-size: 420%;
-  background-color: inherit;
-}
-/* nav centrado y con espacio de la barra de la página*/
-nav ul {
-  padding: 20px;
-  margin: 0 auto;
-  list-style: none;
-  text-align: center;
-}
-/* nav block */
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
-}
-/* nav color */
-nav ul li a {
-  padding: 10px 0;
-  color: #e6b31e;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.2s ease;
-}
-nav ul li a:hover {
-  color: #fcfaf1;
-}
-/* color de a luego de activar los links*/
-a.active {
-  border-bottom: 2px solid #ecf0f1;
-}
-
-/* Textos de la página */
-h1 {
-  font-size: 5rem;
+.fab {
   color: #343434;
-}
-#hwork{
-margin-top: 0;
-}
-/* imagenes */
-#logoImg{
-  width: 20%;
-  height: 50%;
-  margin-top: 10%;
-}
-
-/* Secciones */
-section {
-  width: 100%;
-  padding: 50px;
-  border-bottom: 1px solid #ccc;
-  height: 500px;
+  font-size: 300%;
   text-align: center;
-}
-section:nth-child(even) {
-  background: #cacaca ;
-}
-section:nth-child(odd) {
-  background: #e6b31e;
-}
-.sections section:first-child {
-  margin-top: 60px;
+  margin-top: 36%;
 }
 
-/* Habilidades */
+/* Abilities */
 
 .fakeButtons {
   height: 10px;
@@ -126,23 +107,26 @@ section:nth-child(odd) {
   border-radius: 50%;
   border: 1px solid #000;
   position: relative;
+  top: 6px;
   left: 6px;
   background-color: #ff3b47;
   border-color: #9d252b;
   display: inline-block;
+  left: 85%;
 }
 
 .fakeMinimize {
   left: 11px;
   background-color: #ffc100;
   border-color: #9d802c;
+  left: 87%;
 }
 
 .fakeZoom {
   left: 16px;
   background-color: #00d742;
   border-color: #049931;
-  margin-right: 7%;
+  left: 89%;
 }
 
 .fakeMenu {
@@ -153,27 +137,28 @@ section:nth-child(odd) {
   margin: 0 auto;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  text-align: right;
 }
 
 .fakeScreen {
   background-color: #151515;
   box-sizing: border-box;
   width: 500px;
+  margin: 0 auto;
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  height: 73%;
-  left: 73%;
-  margin-left: 21.1em;
+}
+
+p {
+  position: relative;
+  left:35%;
+  margin-left: -8.5em;
   text-align: left;
   font-size: 1.25em;
   font-family: monospace;
-}
-
-span {
-  color: #fff;
-  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
 }
 
 .line1 {
@@ -192,7 +177,6 @@ span {
   animation: type .5s 4.25s steps(20, end) forwards;
 }
 
-
 .line3 {
   color: #E09690;
   -webkit-animation: type .5s 7.5s steps(20, end) forwards;
@@ -202,42 +186,42 @@ span {
 }
 
 .line4 {
-  color: rgb(28, 255, 28);
-  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
-  -moz-animation: type .5s 10.75s steps(20, end) forwards;
-  -o-animation: type .5s 10.75s steps(20, end) forwards;
-  animation: type .5s 10.75s steps(20, end) forwards;
+  color: #36ff36;
+  -webkit-animation: type .5s 10s steps(20, end) forwards;
+  -moz-animation: type .5s 10s steps(20, end) forwards;
+  -o-animation: type .5s 10s steps(20, end) forwards;
+  animation: type .5s 10s steps(20, end) forwards;
 }
 
-.line5 {
-  color: rgb(251, 157, 242);
-  -webkit-animation: type .5s 14s steps(20, end) forwards;
-  -moz-animation: type .5s 14s steps(20, end) forwards;
-  -o-animation: type .5s 14s steps(20, end) forwards;
-  animation: type .5s 14s steps(20, end) forwards;
+.line5{
+  color: #dc93ff;
+  -webkit-animation: type .5s 13s steps(20, end) forwards;
+  -moz-animation: type .5s 13s steps(20, end) forwards;
+  -o-animation: type .5s 13s steps(20, end) forwards;
+  animation: type .5s 13s steps(20, end) forwards;
 }
 
-.line6 {
-  color: rgb(71, 232, 223);
-  -webkit-animation: type .5s 17.25s steps(20, end) forwards;
-  -moz-animation: type .5s 17.25s steps(20, end) forwards;
-  -o-animation: type .5s 17.25s steps(20, end) forwards;
-  animation: type .5s 17.25s steps(20, end) forwards;
+.line6{
+  color: #7dfdff;
+  -webkit-animation: type .5s 15.75s steps(20, end) forwards;
+  -moz-animation: type .5s 15.75s steps(20, end) forwards;
+  -o-animation: type .5s 15.75s steps(20, end) forwards;
+  animation: type .5s 15.75s steps(20, end) forwards;
 }
 
-.line7 {
+.line7{
   color: #fff;
-  -webkit-animation: type .5s 20.75s steps(20, end) forwards;
-  -moz-animation: type .5s 20.75s steps(20, end) forwards;
-  -o-animation: type .5s 20.75s steps(20, end) forwards;
-  animation: type .5s 20.75s steps(20, end) forwards;
+  -webkit-animation: type .5s 18s steps(20, end) forwards;
+  -moz-animation: type .5s 18s steps(20, end) forwards;
+  -o-animation: type .5s 18s steps(20, end) forwards;
+  animation: type .5s 18s steps(20, end) forwards;
 }
-
-.cursor {
-  -webkit-animation: blink 1s 11.5s infinite;
-  -moz-animation: blink 1s 8.5s infinite;
-  -o-animation: blink 1s 8.5s infinite;
-  animation: blink 1s 8.5s infinite;
+.cursor{
+  color: #fff;
+  -webkit-animation: blink 1s 18s infinite;
+  -moz-animation: blink 1s 18s infinite;
+  -o-animation: blink 1s 18s infinite;
+  animation: blink 1s 18s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -333,5 +317,36 @@ span {
 @keyframes type {
   to {
     width: 17em;
+  }
+}
+
+/* queries */ 
+@media (min-width: 992px) { 
+  #elephant{
+    width: 25%;
+    margin-top: 15%;
+    margin-left: 30%;
+  }
+  h1{
+    margin-bottom: 5%;
+  }
+  #meme {
+    margin-right: 48%;
+    margin-left: 10%;
+  }
+  #kaybel{
+    position: absolute;
+    margin-left: 55%;
+    width: 30%;
+  }
+  .fa{
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+  .fa-envelope:before {
+    margin-left: 35%;
+  }
+  .iconosDiv {
+  margin-top: -25%;
   }
 }

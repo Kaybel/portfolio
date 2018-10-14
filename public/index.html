@@ -9,52 +9,62 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li>
-        <a href="#home"> Inicio </a>
-      </li>
-      <li>
-        <a href="#work"> Trabajos </a>
-      </li>
-      <li>
-        <a href="#about_me"> Sobre mí </a>
-      </li>
-      <li>
-        <a href="#abilities"> Habilidades </a>
-      </li>
-      <li>
-        <a href="#contact_me"> Contáctame </a>
-      </li>
-    </ul>
-  </nav>
-
+  <div class="pos-f-t">
+    <nav class="navbar">
+    </nav>
+    <nav id="sideMenu" class="nav flex-column float-left">
+      <div class="menu_content">
+        <button class="nav-link" onclick="showHome()"> 
+          <img src="assets/img/evernote-logo.png" id="fas" alt="elephant">
+        </button>
+        <button class="nav-link" onclick="showWork()">
+          <i class="fas fa-briefcase"></i>
+        </button>
+        <button class="nav-link" onclick="showAboutMe()">
+          <i class="fas fa-smile-beam"></i>
+        </button>
+        <button class="nav-link" onclick="showAbs()">
+          <i class="fas fa-laptop"></i>
+        </button>
+        <button class="nav-link" onclick="showContact()">
+          <i class="fas fa-mail-bulk"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
   <section id="home">
-    <img src="assets/img/logo.png" id="logoImg" alt="" srcset="">
+    <img src="assets/img/logo.png" id="elephant" alt="elephant">
   </section>
 
   <section id="work">
     <h1 id="work"> Trabajos </h1>
     <img src="..." class="rounded float-left" alt="imagen de proyecto ConectApp Angular">
-    <div class="text-center">
-        <img src="..." class="rounded" alt="imagen de FoodMap">
-      </div>
     <img src="..." class="rounded float-right" alt="imagen de HackatonHere">
   </section>
 
   <section id="about_me">
-      <h1> Sobre mí </h1>
-      <div id="meme">Me llamo <strong>Alejandra Martinez </strong> Soy <strong>Front-End Developer</strong> parte de la 6ta Generación del Bootcamp de Laboratoria en Santiago, Chile me considero capaz, siempre intento dar lo mejor de mi en los proyectos planteados y en las circunstancias que pueda solucionar a través de las tecnologías anteriormente aprendidas dado que para mí las mismas son la solución futura a los problemas del presente.
-      <br> <br>
-      Mis metas son seguir estudiando y aprendiendo sobre informática.</div>
-      <img src="assets/img/WhatsApp Image 2018-10-13 at 18.59.32.jpeg" alt="foto mía" id="kaybel" srcset="">
+    <h1> Sobre mí </h1>
+    <img src="assets/img/WhatsApp Image 2018-10-13 at 18.59.32.jpeg" alt="foto mía" id="kaybel" srcset="">
+    <div id="meme">Me llamo
+      <strong>Alejandra Martínez </strong> Soy
+      <strong>Front-End Developer</strong> parte de la 6ta Generación del Bootcamp de
+      <strong>Laboratoria en Santiago, Chile. </strong>
+      <br> Me gusta la
+      <strong> programación </strong> porque es divertido utilizar los diferentes lenguajes y los frameworks hasta conseguir un diseño funcional, como un lienzo en blanco frente a un pintor, <strong> también me gusta </strong>leer curiosidades, hacer crucigramas y viajar. 
+      <br> <strong> Soy </strong> energética, sociable y extrovertida.
+      <br>
+      <strong>Me gustan los elefantes,</strong> simbolizan la destruccion de los obstaculos, son capaces de recordar todo lo vivido, representan también resistencia a la abversidad, sabiduria y buena suerte, tuve
+      la oportunidad de cuidar uno hace unos años y fue una de las  experiencias mas bonitas que he tenido.
+      <br>
+      <br> Mis metas son
+      <strong>seguir estudiando y aprendiendo </strong> sobre informática.</div>
   </section>
-
   <section id="abilities">
     <h1> Habilidades </h1>
     <div class=fakeMenu>
@@ -69,20 +79,18 @@
       <p class="line4">&nbsp;&ldquo;Git, Mocha, Chai, Jest &rdquo;&nbsp;,</p>
       <p class="line5">&nbsp;&ldquo;JSON, Firebase &rdquo;&nbsp;,</p>
       <p class="line6">&nbsp;&ldquo;metodologia agile &rdquo;&nbsp;&#93;,</p>
-      <p class="line7">> Gracias.
-        <span class="cursor">_</span>
-      </p>
+      <p class="line7"> > Gracias. <span class="cursor">_</span> </p>
     </div>
   </section>
-
-  <section id="contact_me">
+ <section id="contact_me">
     <h1> Contáctame </h1>
-  <a href="https://github.com/Kaybel" target="GitHub"class="icon"><i class="fab fa-github-square"></i></a>
-  <a href="https://www.linkedin.com/in/alejandra-kaybel-martinez-gonzalez-801b8914a/" target="LinkedIn"class="icon"><i class="fab fa-linkedin"></i></a>
+    <div class="iconosDiv">
+  <a href="https://github.com/Kaybel" target="GitHub"class="icon"><i class="fab fa-github-square"> <span>GitHub</span> </i></a>
+  <a href="https://www.linkedin.com/in/alejandra-kaybel-martinez-gonzalez-801b8914a/" target="LinkedIn"class="icon"><i class="fab fa-linkedin"> <span>LinkedIn</span> </i></a>
   <!-- Button trigger modal -->
 <button type="button" class="icon" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    <i class="fas fa-envelope"></i>
-  </button>
+    <i class="fas fa-envelope"></i> <span>Mail</span>
+  </button> 
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -102,11 +110,15 @@
         </div>
       </div>
     </div>
-  </div>
-  </section>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </div>  
+</div>
+  </section> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="src/js/index.js"></script>
 </body>
 
