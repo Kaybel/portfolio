@@ -12,53 +12,31 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/style.scss">
 </head>
 
 <body>
-
-  <div class="pos-f-t">
-    <nav class="navbar"> <i class="fas fa-wifi"></i>
-      <i class="fas fa-battery-three-quarters"></i>
-      <i class="fas fa-volume-up"></i>
-      <div id="timeDiv"> </div>
-      <img src="assets/img/english.png" class="english">
-      <img src="assets/img/shutdown.png" class="shutdown">
-    </nav>
-    <nav id="sideMenu" class="nav flex-column float-left">
-      <div class="menu_content">
-        <button class="nav-link" onclick="showHome()"> 
-          <img src="assets/img/evernote-logo.png" id="fas" alt="elephant">
-        </button>
-        <button class="nav-link" onclick="showWork()">
-          <i class="fas fa-briefcase"></i>
-        </button>
-        <button class="nav-link" onclick="showAboutMe()">
-          <i class="fas fa-smile-beam"></i>
-        </button>
-        <button class="nav-link" onclick="showAbs()">
-          <i class="fas fa-laptop"></i>
-        </button> 
-        <button class="nav-link" onclick="showContact()">
-          <i class="fas fa-mail-bulk"></i>
-        </button>
-      </div>
-      <i class="fas fa-trash"></i>
-    </nav>
-  </div>
-  <section id="home">
-    <img src="assets/img/logo.png" id="elephant" alt="elephant">
-  </section>
-
-  <section id="work">
-    <h1 id="work"> Trabajos </h1>
-    <img src="..." class="rounded float-left" alt="imagen de proyecto ConectApp Angular">
-    <img src="..." class="rounded float-right" alt="imagen de HackatonHere">
-  </section>
-
+  <section id="nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button id="nav">Sobre Mí</button>
+      <button id="nav">Habilidades</button>
+      <button id="nav">Proyectos</button>
+    </div>
+  </nav>
+</section>
+<section id="index">
+  <canvas id="canvas"></canvas>
+<h1>Δlejandra Martínez</h1>
+</section>
   <section id="about_me">
-    <h1> Sobre mí </h1>
+    <h4> Sobre mí </h4>
     <img src="assets/img/WhatsApp Image 2018-10-13 at 18.59.32.jpeg" alt="foto mía" id="kaybel" srcset="">
-    <div id="meme">Me llamo
+    <div id="meme">Me llamo 
       <strong>Alejandra Martínez </strong> Soy
       <strong>Front-End Developer</strong> parte de la 6ta Generación del Bootcamp de
       <strong>Laboratoria en Santiago, Chile. </strong>
@@ -73,8 +51,9 @@
       <br> Mis metas son
       <strong>seguir estudiando y aprendiendo </strong> sobre informática.</div>
   </section>
+
   <section id="abilities">
-    <h1> Habilidades </h1>
+    <!-- <h1> Habilidades </h1> -->
     <div class=fakeMenu>
       <div class="fakeButtons fakeClose"></div>
       <div class="fakeButtons fakeMinimize"></div>
@@ -90,37 +69,7 @@
       <p class="line7"> > Gracias. <span class="cursor">_</span> </p>
     </div>
   </section>
- <section id="contact_me">
-    <h1> Contáctame </h1>
-    <div class="iconosDiv">
-  <a href="https://github.com/Kaybel" target="GitHub"class="icon"><i class="fab fa-github-square"> <span>GitHub</span> </i></a>
-  <a href="https://www.linkedin.com/in/alejandra-kaybel-martinez-gonzalez-801b8914a/" target="LinkedIn"class="icon"><i class="fab fa-linkedin"> <span>LinkedIn</span> </i></a>
-  <!-- Button trigger modal -->
-<button type="button" class="icon" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    <i class="fas fa-envelope"></i> <span>Mail</span>
-  </button> 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Mail: </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          kblmrtnz@gmail.com
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>  
-</div>
-  </section> 
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -128,6 +77,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script src="src/js/index.js"></script>
+
 </body>
 
 </html>
