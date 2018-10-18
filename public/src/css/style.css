@@ -220,57 +220,57 @@ p {
 
 .line2 {
   color: #CDEE69;
-  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
-  -moz-animation: type .5s 4.25s steps(20, end) forwards;
-  -o-animation: type .5s 4.25s steps(20, end) forwards;
-  animation: type .5s 4.25s steps(20, end) forwards;
+  -webkit-animation: type .5s 2s steps(20, end) forwards;
+  -moz-animation: type .5s 2s steps(20, end) forwards;
+  -o-animation: type .5s 2s steps(20, end) forwards;
+  animation: type .5s 2s steps(20, end) forwards;
 }
 
 .line3 {
   color: #E09690;
-  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
-  -moz-animation: type .5s 7.5s steps(20, end) forwards;
-  -o-animation: type .5s 7.5s steps(20, end) forwards;
-  animation: type .5s 7.5s steps(20, end) forwards;
+  -webkit-animation: type .5s 4s steps(20, end) forwards;
+  -moz-animation: type .5s 4s steps(20, end) forwards;
+  -o-animation: type .5s 4s steps(20, end) forwards;
+  animation: type .5s 4s steps(20, end) forwards;
 }
 
 .line4 {
   color: #36ff36;
+  -webkit-animation: type .5s 6s steps(20, end) forwards;
+  -moz-animation: type .5s 6s steps(20, end) forwards;
+  -o-animation: type .5s 6s steps(20, end) forwards;
+  animation: type .5s 6s steps(20, end) forwards;
+}
+
+.line5{
+  color: #dc93ff;
+  -webkit-animation: type .5s 8s steps(20, end) forwards;
+  -moz-animation: type .5s 8s steps(20, end) forwards;
+  -o-animation: type .5s 8s steps(20, end) forwards;
+  animation: type .5s 8s steps(20, end) forwards;
+}
+
+.line6{
+  color: #7dfdff;
   -webkit-animation: type .5s 10s steps(20, end) forwards;
   -moz-animation: type .5s 10s steps(20, end) forwards;
   -o-animation: type .5s 10s steps(20, end) forwards;
   animation: type .5s 10s steps(20, end) forwards;
 }
 
-.line5{
-  color: #dc93ff;
-  -webkit-animation: type .5s 13s steps(20, end) forwards;
-  -moz-animation: type .5s 13s steps(20, end) forwards;
-  -o-animation: type .5s 13s steps(20, end) forwards;
-  animation: type .5s 13s steps(20, end) forwards;
-}
-
-.line6{
-  color: #7dfdff;
-  -webkit-animation: type .5s 15.75s steps(20, end) forwards;
-  -moz-animation: type .5s 15.75s steps(20, end) forwards;
-  -o-animation: type .5s 15.75s steps(20, end) forwards;
-  animation: type .5s 15.75s steps(20, end) forwards;
-}
-
 .line7{
   color: #fff;
-  -webkit-animation: type .5s 18s steps(20, end) forwards;
-  -moz-animation: type .5s 18s steps(20, end) forwards;
-  -o-animation: type .5s 18s steps(20, end) forwards;
-  animation: type .5s 18s steps(20, end) forwards;
+  -webkit-animation: type .5s 12s steps(20, end) forwards;
+  -moz-animation: type .5s 12s steps(20, end) forwards;
+  -o-animation: type .5s 12s steps(20, end) forwards;
+  animation: type .5s 12s steps(20, end) forwards;
 }
 .cursor{
   color: #fff;
-  -webkit-animation: blink 1s 18s infinite;
-  -moz-animation: blink 1s 18s infinite;
-  -o-animation: blink 1s 18s infinite;
-  animation: blink 1s 18s infinite;
+  -webkit-animation: blink 1s 12s infinite;
+  -moz-animation: blink 1s 12s infinite;
+  -o-animation: blink 1s 12s infinite;
+  animation: blink 1s 12s infinite;
 }
 .devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
   content: "\e90a";
