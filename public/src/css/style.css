@@ -6,9 +6,7 @@ body {
   padding: 0;
   cursor: pointer;
 }
-canvas {
-  border: 1px soild black;
-}
+
 h1 {
   display: inline-block;
   padding: .3em;
@@ -18,12 +16,23 @@ h1 {
   left: 50%;
   user-select: none;
   transform: translate(-50%,-50%);
-  color: rgba(255,255,255,.68);
-  border: .075em solid rgba(255,255,255,.1);
+  color: #343434;
+  border: .075em solid #343434;
+  z-index: 1;
 }
+
 /* About Me */
-h1{
-  text-align: center;
+#about_me{
+    padding: 5%;
+    height: 100vh;
+}
+#abilities{
+  padding: 5%;
+  height: 100vh;
+}
+#work{
+  padding: 5%;
+  height: 100vh;
 }
 #kaybel{
   width: 50%;
@@ -38,12 +47,18 @@ h1{
 /* Nav */
 
 button#nav{
-  color: #c6a668;
-  border: .05px solid #c6a668;
+  color: #343434;
+  border: .05px solid #343434;
   background-color: inherit;
   display: block;
 
 }
+nav.navbar{
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+}
+
 .navbar-collapse{
   align-items: center;
 }
@@ -68,21 +83,25 @@ button:hover span {
   opacity:1;
     -webkit-transition: opacity .1s ease-in .5s;
 }
-.iconosDiv {
-  margin-left: 30%;
+.fa, .fas {
+  font-weight: 900;
+  font-size: 150%;
+}
+h2{
+  text-align: center;
 }
 .icon{
   border: none;
   background-color: inherit;
-  margin-left: 10%;
+  font-size: 75%;
 }
 .fa-envelope:before {
   content: "\f0e0";
-  color: #343434;
+  color: #191918;
   font-size: 135%;
 }
 .fab {
-  color: #343434;
+  color: #191918;
   font-size: 300%;
   text-align: center;
   margin-top: 36%;
@@ -90,6 +109,44 @@ button:hover span {
 #contact_me{
   position: fixed;
   height: 10%;
+}
+/*fixed*/
+
+:root {
+	--color-facebook: #3b5998;
+	--color-twitter: #1ab2e8;
+	--color-whatsapp: #41d32a;
+	--color-instagram1: #5c62d2;
+	--color-instagram2: #fec75d;
+	--color-instagram3: #dd3283;
+	--color-google: #dd4d40;
+
+}
+
+section {
+	width: 100%;
+}
+
+
+.icons-fixed {
+  position: fixed;
+  bottom: 1%;
+}
+
+
+.icons-fixed .icons {
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #c1b8b8;
+	cursor: pointer;
+	transition-duration: 300ms;
+	transition-timing-function: linear;
 }
 
 /* Abilities */
@@ -216,7 +273,10 @@ p {
   -o-animation: blink 1s 18s infinite;
   animation: blink 1s 18s infinite;
 }
-
+.devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
+  content: "\e90a";
+  font-size: 285%;
+}
 @-webkit-keyframes blink {
   0% {
     opacity: 0;
@@ -325,11 +385,11 @@ p {
   #kaybel{
     position: absolute;
     margin-left: 55%;
-    width: 25%;
+    width: 23%;
   }
   button#nav{
-    color: #c6a668;
-    border: .05px solid #c6a668;
+    color: #343434;
+    border: .05px solid #343434;
     background-color: inherit;
     display: block;
     text-align: center;
@@ -341,4 +401,5 @@ p {
     width: 98.8vw;
     height: 100vh;
 }
+
 }

@@ -16,7 +16,7 @@ var config = {
 
 // Colors
 var colorPalette = {
-    bg: {r:12,g:9,b:29},
+    bg: {r:255,g:204,b:128},
     matter: [
       {r:36,g:18,b:42}, // darkPRPL
       {r:78,g:36,b:42}, // rockDust
