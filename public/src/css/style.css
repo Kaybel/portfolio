@@ -48,7 +48,6 @@ h1 {
 
 button#nav{
   color: #343434;
-  border: .05px solid #343434;
   background-color: inherit;
   display: block;
 
@@ -389,7 +388,7 @@ p {
   }
   button#nav{
     color: #343434;
-    border: .05px solid #343434;
+    border: none;
     background-color: inherit;
     display: block;
     text-align: center;
