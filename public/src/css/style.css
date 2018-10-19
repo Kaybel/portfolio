@@ -16,12 +16,14 @@ nav {
   padding: 10px;
   text-decoration: none;
   z-index: 2;
+  font-family: 'Megrim', cursive;
 }
  
 .nav-link:hover {
   background: #343434;
   color: white;
   z-index: 2;
+  font-family: 'Megrim', cursive;
 }
 
 /* START TOOLTIP STYLES */
@@ -646,7 +648,7 @@ p {
     width: 100%;
   }
   #work{
-    height: 160vh;
+    height: 180vh;
     padding: 20%;
   }
 }
