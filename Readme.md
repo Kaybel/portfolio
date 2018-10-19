@@ -1,25 +1,11 @@
-# Paleta de colores
-
-  e6b31e (amarillo)
-  fcfaf1 (blanco)
-  343434 (gris)
-  cacaca (gris claro)
-  c6a668 (dorado)
-
-# Logo
-
-el elefante simboliza la destruccion de los obstaculos, resistencia a la abversidad, sabiduria y buena suerte.
-
 # Demo
 
 [demo](https://portfolio-kay.firebaseapp.com/)
 
-Agregar trabajos.
 mail
-fuentes
-deploy
 lms
+redireccionar desde img
 
-hackatonhere.firebaseapp.com (here)
-proyecto-final-6656c.firebaseapp.com (registrapp)
-https://redframework-1e62f.firebaseapp.com/ (angular)
+hackatonhere.firebaseapp.com (here)     https://github.com/Kaybel/HackatonHere
+proyecto-final-6656c.firebaseapp.com (registrapp)     https://github.com/Kaybel/scl-2018-01-ProyectoFinalCore
+https://redframework-1e62f.firebaseapp.com/ (angular)    https://github.com/Kaybel/social-network-angular
