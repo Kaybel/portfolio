@@ -667,6 +667,9 @@ font-family: 'Megrim', cursive;
 }
 }
 @media(max-width: 767px){
+  h1{
+    font-size: 150%;
+  }
   .fakeMenu{
     width: 340px;
   }
@@ -678,6 +681,7 @@ font-family: 'Megrim', cursive;
   }
   #work{
     height: 160vh;
+    padding: 20%;
   }
 }
 
