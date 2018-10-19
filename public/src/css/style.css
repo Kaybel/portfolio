@@ -436,6 +436,7 @@ p {
   }
 }
 @media (min-width: 992px) { 
+  
   #about_me{
     padding: 5%;
   }
@@ -502,6 +503,9 @@ padding: 0%;
 }
 }
 @media(min-width:320px){
+  #cerebro{
+    display: none;
+  }
   .fakeMenu{
     width: 340px;
   }
@@ -541,6 +545,9 @@ padding: 0%;
   margin:10px 10px 80px 10px;
   overflow: hidden;
 }
+.icons-fixed{
+  z-index: 2;
+}
 .cube div {
   position: absolute;
   top: 0;
@@ -552,7 +559,6 @@ padding: 0%;
   display: table;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
-  margin-left: 15%;
 }
 .slideTextUp img {
   margin-top:20px;
