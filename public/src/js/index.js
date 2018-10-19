@@ -145,35 +145,33 @@ frame();
 // First particle explosion
 initParticles(config.particleNumber);
 
+// 
 
-var sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
-
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
+Vue.directive('tooltip', {
+    componentUpdated (el, binding, vnode, oldVnode) {
+      vnode.data._div = oldVnode.data._div
+      vnode.data._div.innerHTML = '<span>' + binding.value + '</span>'
+    },
+      inserted (el, binding, vnode) {
+        // create div
+      const div = document.createElement('div')
+      vnode.data._div = div
+      el.insertAdjacentElement('beforeend', div)
+      div.classList.add('my-tooltip')
+      div.innerHTML = '<span>' + binding.value + '</span>'
   
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
-    
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
-      
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        el.addEventListener('mouseover', () => {
+        div.classList.add('my-tooltip-active')
+      })
+      el.addEventListener('mouseout', () => {
+        div.classList.remove('my-tooltip-active')
+      })
     }
-  });
-});
-
-nav.find('a').on('click', function () {
-  var $el = $(this)
-    , id = $el.attr('href');
+  })
   
-  $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height
-  }, 500);
-  
-  return false;
-});
+  new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue.js!'
+    }
+  })
