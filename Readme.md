@@ -5,7 +5,7 @@
   343434 (gris)
   cacaca (gris claro)
   c6a668 (dorado)
-  
+
 # Logo
 
 el elefante simboliza la destruccion de los obstaculos, resistencia a la abversidad, sabiduria y buena suerte.
@@ -15,7 +15,7 @@ el elefante simboliza la destruccion de los obstaculos, resistencia a la abversi
 [demo](https://portfolio-kay.firebaseapp.com/)
 
 Agregar trabajos.
-color
+mail
 
 hackatonhere.firebaseapp.com (here)
 proyecto-final-6656c.firebaseapp.com (registrapp)

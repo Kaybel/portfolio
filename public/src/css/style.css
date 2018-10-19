@@ -6,6 +6,9 @@ body {
   padding: 0;
   cursor: pointer;
 }
+#about_me{
+background-color: rgb(255,204,128);
+}
 
 h1 {
   display: inline-block;
