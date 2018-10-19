@@ -9,7 +9,25 @@ body {
 #about_me{
 background-color: rgb(255,204,128);
 }
-
+h6{
+  text-align: justify;
+}
+#cv{
+  font-size: 190%;
+  font-family: 'Anton', sans-serif;
+  color: #191918;
+}
+#cv:hover{
+  font-size: 190%;
+  font-family: 'Anton', sans-serif;
+  color: #191918;
+}
+.redireccion{
+  color: black;
+}
+.redireccion:hover{
+  color: black;
+}
 h1 {
   display: inline-block;
   padding: .3em;
