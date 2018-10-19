@@ -147,31 +147,18 @@ initParticles(config.particleNumber);
 
 // 
 
-Vue.directive('tooltip', {
-    componentUpdated (el, binding, vnode, oldVnode) {
-      vnode.data._div = oldVnode.data._div
-      vnode.data._div.innerHTML = '<span>' + binding.value + '</span>'
-    },
-      inserted (el, binding, vnode) {
-        // create div
-      const div = document.createElement('div')
-      vnode.data._div = div
-      el.insertAdjacentElement('beforeend', div)
-      div.classList.add('my-tooltip')
-      div.innerHTML = '<span>' + binding.value + '</span>'
+$(document).ready(function () {
+
+    // add the event listener for 'click' events
+    $('.icon').on('click', function (e) {
+      e.preventDefault(); // prevent the default action from executing
+      var id = $(e.currentTarget).attr('href'); // get the destinations id
+      var $dest = $(id); // convert the desination into a jQuery object
   
-        el.addEventListener('mouseover', () => {
-        div.classList.add('my-tooltip-active')
-      })
-      el.addEventListener('mouseout', () => {
-        div.classList.remove('my-tooltip-active')
-      })
-    }
-  })
+      // animate the scroll position to the destination over a period of 1000ms
+      $('html,body').animate({
+        scrollTop: ($dest.offset().top)
+      }, 1000);
+    });
   
-  new Vue({
-    el: '#app',
-    data: {
-      message: 'Hello Vue.js!'
-    }
-  })
+  });
