@@ -515,13 +515,13 @@ padding: 0%;
 }
 
 .bg1 {
-  background-image:url(../../assets/img/WhatsApp\ Image\ 2018-10-19\ at\ 04.15.26.jpeg); 
+  background-image:url(../../assets/img/WhatsApp\ Image\ 2018-10-19\ at\ 08.24.34.jpeg); 
   background-size: cover; 
   background-size: 250px auto; 
   display: inline-block;
 }
 .bg2 {
-  background-image:url(../../assets/img/WhatsApp\ Image\ 2018-10-19\ at\ 04.18.16.jpeg); 
+  background-image:url(../../assets/img/WhatsApp\ Image\ 2018-10-19\ at\ 08.24.45.jpeg); 
   background-size: cover; 
   background-size: 250px auto; 
   display: inline-block;
@@ -552,6 +552,7 @@ padding: 0%;
   display: table;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  margin-left: 15%;
 }
 .slideTextUp img {
   margin-top:20px;
