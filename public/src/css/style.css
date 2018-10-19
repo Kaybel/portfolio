@@ -352,6 +352,7 @@ h2{
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  margin-bottom: 10%;
 }
 
 p {
@@ -434,7 +435,7 @@ p {
   -moz-animation: blink 1s 12s infinite;
   -o-animation: blink 1s 12s infinite;
   animation: blink 1s 12s infinite;
-  margin-left: -25%;
+  margin-left: 25%;
 }
 .devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
   content: "\e90a";
