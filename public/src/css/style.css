@@ -160,18 +160,22 @@ h6{
 #cv{
   font-size: 150%;
   font-family: 'Megrim', cursive;
-  color: #191918;
 }
 #cv:hover{
   font-size: 150%;
   font-family: 'Anton', sans-serif;
+}
+.icon:hover{
   color: #191918;
+  font-size: 150%;
 }
 .redireccion{
-  color: black;
+  color: #191918;
+  border: solid #191918 1px;
 }
 .redireccion:hover{
-  color: black;
+  color: #191918;
+  border: solid #191918 1px;
 }
 
 h1 {
@@ -188,6 +192,7 @@ h1 {
   z-index: 1;
   text-align: center;
   width: 60%;
+  background-color: white;
 }
 
 /* About Me */
@@ -240,48 +245,12 @@ h2{
   font-family: 'Charmonman', cursive;
   color: #343434;
 }
-.icon{
-  border: none;
-  background-color: inherit;
-  font-size: 75%;
-}
-.fa-envelope:before {
-  content: "\f0e0";
-  color: #191918;
-  font-size: 135%;
-}
-.fab {
-  color: #191918;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 36%;
-}
+
 #contact_me{
   position: fixed;
   height: 10%;
 }
 
-/*fixed*/
-
-.icons-fixed {
-  position: fixed;
-  bottom: 1%;
-}
-
-.icons-fixed .icons {
-	width: 80px;
-	height: 80px;
-	font-size: 60px;
-	padding: 10px;
-	margin-left: 10px;
-	margin-bottom: 2px;
-	border-radius: 50%;
-	color: #fff;
-	background-color: #c1b8b8;
-	cursor: pointer;
-	transition-duration: 300ms;
-	transition-timing-function: linear;
-}
 /*sections*/
 #proy{
   margin-left: -17%;
@@ -340,7 +309,15 @@ h2{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
+footer{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: rgb(255,204,128);
+  text-align: center;
+}
+h3{
+  margin-bottom: 5%;
+}
 p {
   position: relative;
   left:35%;
@@ -406,10 +383,19 @@ p {
   animation: type .5s 10s steps(20, end) forwards;
   margin-left: -30%;
 }
-
-.devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
-  content: "\e90a";
-  font-size: 285%;
+.icon{
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 150%;
+  color: #191918;
+}
+.fa-github-square:before {
+  content: "\f092";
+  font-size: 151%;
+}
+.fa-linkedin:before {
+  content: "\f08c";
+  font-size: 150%;
 }
 @-webkit-keyframes blink {
   0% {
@@ -620,15 +606,15 @@ p {
     height: 100vh;
   }
   .fakeMenu{
-    margin-left: 25%;
+    margin-left: 30%;
   }
   .fakeScreen{
-    margin-left: 25%;
+    margin-left: 30%;
   }
 }
 @media(min-width: 1280px){
   #kaybel{
-    margin-top: 7%;
+    margin-top: 10%;
   }
   #work{
     height: 100vh;
@@ -668,18 +654,42 @@ p {
   h1{
     font-size: 150%;
   }
+  .fa-arrow-alt-circle-down:before {
+    content: "\f358";
+    font-size: 50%;
+    position: absolute;
+    /* top: 62%; */
+}
   .fakeMenu{
-    width: 340px;
+    width: 295px;
   }
   .fakeScreen{
-    width: 340px;
+    width: 295px;
   }
   #canvas{
     width: 100%;
   }
   #work{
-    height: 170vh;
+    height: 210vh;
     padding: 4%;
+  }
+  .line1{
+    margin-left: -40%;
+  }
+  .line2{
+    margin-left: -40%;
+  }
+  .line3{
+    margin-left: -40%;
+  }
+  .line4{
+    margin-left: -40%;
+  }
+  .line5{
+    margin-left: -40%;
+  }
+  .line6{
+    margin-left: -40%;
   }
 }
 
@@ -709,9 +719,6 @@ p {
   float:left;
   margin:10px 10px 80px 10px;
   overflow: hidden;
-}
-.icons-fixed{
-  z-index: 2;
 }
 .cube div {
   position: absolute;
