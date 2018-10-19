@@ -9,7 +9,19 @@ nav {
   text-align: center;
   font-family: 'Megrim', cursive;
 }
- 
+#arrow{
+  top: 73%;
+  position: absolute;
+  left: 40%;
+  z-index: 1;
+  font-size: 650%;
+}
+#arrow:hover{
+  color: white;
+}
+#centerWork{
+  margin-left: 10%;
+}
 .nav-link {
   color: #343434;
   display: inline-block;
@@ -161,6 +173,7 @@ h6{
 .redireccion:hover{
   color: black;
 }
+
 h1 {
   display: inline-block;
   padding: .3em;
@@ -179,7 +192,7 @@ h1 {
 
 /* About Me */
 #abilities{
-  height: 100%;
+  height: 100vh;
 }
 #work{
   height: 100vh;
@@ -247,6 +260,7 @@ h2{
   position: fixed;
   height: 10%;
 }
+
 /*fixed*/
 
 .icons-fixed {
@@ -269,9 +283,11 @@ h2{
 	transition-timing-function: linear;
 }
 /*sections*/
+#proy{
+  margin-left: -17%;
+}
 h2{
   padding-top: 5%;
-  padding-bottom: 5%;
 }
 /* Abilities */
 
@@ -302,7 +318,9 @@ h2{
   border-color: #049931;
   left: 84%;
 }
-
+#abs{
+  margin-bottom: 10%;
+}
 .fakeMenu {
   width: 365px;
   box-sizing: border-box;
@@ -321,7 +339,6 @@ h2{
   padding: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-bottom: 10%;
 }
 
 p {
@@ -390,22 +407,6 @@ p {
   margin-left: -30%;
 }
 
-.line7{
-  color: #fff;
-  -webkit-animation: type .5s 12s steps(20, end) forwards;
-  -moz-animation: type .5s 12s steps(20, end) forwards;
-  -o-animation: type .5s 12s steps(20, end) forwards;
-  animation: type .5s 12s steps(20, end) forwards;
-  margin-left: -25%;
-}
-.cursor{
-  color: #fff;
-  -webkit-animation: blink 1s 12s infinite;
-  -moz-animation: blink 1s 12s infinite;
-  -o-animation: blink 1s 12s infinite;
-  animation: blink 1s 12s infinite;
-  margin-left: 25%;
-}
 .devicon-github-original-wordmark:before, .devicon-github-plain-wordmark:before {
   content: "\e90a";
   font-size: 285%;
@@ -509,7 +510,7 @@ p {
 /* queries */ 
 @media(min-width: 360px){
   #meme{
-    margin-left: 0%;
+    margin-left: 5%;
     margin-right: 12%;
   }
   .fakeMenu {
@@ -528,7 +529,7 @@ p {
 @media(min-width: 412px){
   #meme{
     text-align: justify;
-    margin-left: 0%;
+    margin-left: 5%;
     margin-right: 10%;
   }
   .fakeMenu{
@@ -541,14 +542,28 @@ p {
     left: 56%;
   }
 }
+@media (max-width: 769px){
+#work {
+    height: 100vh;
+}
+}
 @media(min-width: 768px){
   h1{
     left: 50%;
+    font-size: 170%;
+  }
+  #arrow{
+    font-size: 400%;
+    left: 46%;
+    position: absolute;
   }
   #meme{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10%;
+  }
+  #work {
+    height: 240vh;
   }
   em{
     font-size: 50%;
@@ -556,6 +571,7 @@ p {
   }
   .fakeScreen{
     width: 500px;
+    margin-bottom: 10%;
   }
   .fakeMenu{
     width: 500px;
@@ -572,6 +588,7 @@ p {
   }
   #abilities{
     padding: 5%;
+    height: 100vh;
   }
   h1{
     margin-bottom: 5%;
@@ -616,6 +633,15 @@ p {
   #work{
     height: 100vh;
   }
+  #centerWork{
+    margin-left: 20%;
+  }
+}
+
+@media(max-width: 375px){
+  #work{
+    height: 140vh;
+  }
 }
 @media(min-width: 1000px){
   #about_me{
@@ -624,6 +650,7 @@ p {
   }
   #abilities{
     padding: 0%;
+    height: 100vh;
   }
   #work{
     padding: 0%;
@@ -635,6 +662,9 @@ p {
   }
 }
 @media(max-width: 767px){
+  h2{
+    margin: 10%;
+  }
   h1{
     font-size: 150%;
   }
@@ -648,8 +678,8 @@ p {
     width: 100%;
   }
   #work{
-    height: 180vh;
-    padding: 20%;
+    height: 170vh;
+    padding: 4%;
   }
 }
 
