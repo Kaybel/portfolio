@@ -16,6 +16,9 @@ el elefante simboliza la destruccion de los obstaculos, resistencia a la abversi
 
 Agregar trabajos.
 mail
+fuentes
+deploy
+lms
 
 hackatonhere.firebaseapp.com (here)
 proyecto-final-6656c.firebaseapp.com (registrapp)

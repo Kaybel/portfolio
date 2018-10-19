@@ -27,9 +27,6 @@ h1 {
 }
 
 /* About Me */
-#about_me{
-    height: 100vh;
-}
 #abilities{
   height: 100vh;
 }
@@ -53,6 +50,7 @@ button#nav{
   color: #343434;
   background-color: inherit;
   display: block;
+  border: none;
 
 }
 nav.navbar{
@@ -92,6 +90,7 @@ button:hover span {
 h2{
   text-align: center;
   font-family: 'Charmonman', cursive;
+  color: #343434;
 }
 .icon{
   border: none;
@@ -146,7 +145,11 @@ h2{
 	transition-duration: 300ms;
 	transition-timing-function: linear;
 }
-
+/*sections*/
+  h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 /* Abilities */
 
 .fakeButtons {
