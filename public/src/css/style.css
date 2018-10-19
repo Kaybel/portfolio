@@ -1,7 +1,4 @@
-
-
- 
- nav {
+nav {
    background:white;
    position: fixed;
    top: 0;
@@ -11,21 +8,21 @@
    z-index: 2;
    text-align: center;
    font-family: 'Megrim', cursive;
- }
+}
  
- .nav-link {
+.nav-link {
    color: #343434;
    display: inline-block;
    padding: 10px;
    text-decoration: none;
    z-index: 2;
- }
+}
  
- .nav-link:hover {
+.nav-link:hover {
    background: #343434;
    color: white;
    z-index: 2;
- }
+}
 
 /* START TOOLTIP STYLES */
 [tooltip] {
@@ -140,8 +137,8 @@ body {
   cursor: pointer;
 }
 #about_me{
-background-color: rgb(255,204,128);
-font-family: 'Megrim', cursive;
+  background-color: rgb(255,204,128);
+  font-family: 'Megrim', cursive;
 }
 h6{
   text-align: justify;
@@ -197,25 +194,7 @@ h1 {
   margin-left: 10%;
   margin-right: 5%;
 }
-/* Nav */
-/*
-button#nav{
-  color: #343434;
-  background-color: inherit;
-  display: block;
-  border: none;
-  font-family: 'Megrim', cursive;
-}
 
-nav.navbar{
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-.navbar-collapse{
-  align-items: center;
-}
 /* Contact me*/
 
 a span {
@@ -226,7 +205,7 @@ a span {
 }
 a:hover span {
   opacity:1;
-    -webkit-transition: opacity .1s ease-in .5s;
+  -webkit-transition: opacity .1s ease-in .5s;
 }
 button span {
   background-color: #343434;
@@ -235,7 +214,7 @@ button span {
 }
 button:hover span {
   opacity:1;
-    -webkit-transition: opacity .1s ease-in .5s;
+  -webkit-transition: opacity .1s ease-in .5s;
 } 
 .fa, .fas {
   font-weight: 900;
@@ -268,22 +247,10 @@ h2{
 }
 /*fixed*/
 
-:root {
-	--color-facebook: #3b5998;
-	--color-twitter: #1ab2e8;
-	--color-whatsapp: #41d32a;
-	--color-instagram1: #5c62d2;
-	--color-instagram2: #fec75d;
-	--color-instagram3: #dd3283;
-	--color-google: #dd4d40;
-
-}
-
 .icons-fixed {
   position: fixed;
   bottom: 1%;
 }
-
 
 .icons-fixed .icons {
 	width: 80px;
@@ -300,10 +267,10 @@ h2{
 	transition-timing-function: linear;
 }
 /*sections*/
-  h2{
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
+h2{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 /* Abilities */
 
 .fakeButtons {
@@ -609,8 +576,8 @@ p {
     width: 25%;
   }
   #meme {
-      margin-right: 48%;
-      margin-left: 10%;
+    margin-right: 48%;
+    margin-left: 10%;
   }
   #kaybel{
     position: absolute;
@@ -632,14 +599,13 @@ p {
   canvas {
     width: 98.8vw;
     height: 100vh;
-}
-.fakeMenu{
-  margin-left: 25%;
-}
-.fakeScreen{
-  margin-left: 25%;
-}
-
+  }
+  .fakeMenu{
+    margin-left: 25%;
+  }
+  .fakeScreen{
+    margin-left: 25%;
+  }
 }
 @media(min-width: 1280px){
   #kaybel{
@@ -650,21 +616,21 @@ p {
   }
 }
 @media(min-width: 1000px){
-#about_me{
-padding: 0%;
-font-family: 'Megrim', cursive;
-}
-#abilities{
-  padding: 0%;
-}
-#work{
-  padding: 0%;
-  height: 100vh;
-}
-#canvas{
-  width: 98.88vw;
+  #about_me{
+    padding: 0%;
+    font-family: 'Megrim', cursive;
+  }
+  #abilities{
+    padding: 0%;
+  }
+  #work{
+    padding: 0%;
     height: 100vh;
-}
+  }
+  #canvas{
+    width: 98.88vw;
+    height: 100vh;
+  }
 }
 @media(max-width: 767px){
   h1{
