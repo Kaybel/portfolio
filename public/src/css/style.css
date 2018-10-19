@@ -170,12 +170,18 @@ h6{
   font-size: 150%;
 }
 .redireccion{
-  color: #191918;
-  border: solid #191918 1px;
+  color: white;
+  background-color: rgb(255,204,128);
+  border: solid rgb(255,204,128) 1px;
+  padding: 2%;
+  font-size: 80%;
 }
 .redireccion:hover{
-  color: #191918;
-  border: solid #191918 1px;
+  color: white;
+  background-color: rgb(255,204,128);
+  border: solid rgb(255,204,128) 1px;
+  padding: 2%;
+  font-size: 80%;
 }
 
 h1 {
