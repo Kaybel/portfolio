@@ -144,21 +144,3 @@ frame();
 
 // First particle explosion
 initParticles(config.particleNumber);
-
-// 
-
-$(document).ready(function () {
-
-  // add the event listener for 'click' events
-  $('.icon').on('click', function (e) {
-    e.preventDefault(); // prevent the default action from executing
-    var id = $(e.currentTarget).attr('href'); // get the destinations id
-    var $dest = $(id); // convert the desination into a jQuery object
-
-    // animate the scroll position to the destination over a period of 1000ms
-    $('html,body').animate({
-      scrollTop: ($dest.offset().top)
-    }, 1000);
-  });
-
-});
